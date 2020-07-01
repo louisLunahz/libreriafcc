@@ -11,10 +11,10 @@ $nombreUno=$_POST['nombreUno'];
 $nombreDos=$_POST['nombreDos'];
 $carrera=$_POST['carrera'];
 $telefono=$_POST['telefono'];
-$host="localhost";
-$user="root";
-$passwordDB="";
-$database="libreria";
+$host="bwswyscfjeaxoy04miln-mysql.services.clever-cloud.com";
+$user="u9yr87t84v3djrd7";
+$passwordDB="DKMw2Jzok7cXWaEwZYlY";
+$database="bwswyscfjeaxoy04miln";
 $link=mysqli_connect($host,$user,$passwordDB);
 mysqli_select_db($link, $database);
 

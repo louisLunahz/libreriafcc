@@ -8,8 +8,8 @@ if (trim($correo) === '' || trim($password) === '') {
 } else {
 	session_start();
 	//conectarse a la base de datos
-	$link=mysqli_connect("localhost","root","");
-	mysqli_select_db($link,"libreria");
+	$link=mysqli_connect("bwswyscfjeaxoy04miln-mysql.services.clever-cloud.com","u9yr87t84v3djrd7","DKMw2Jzok7cXWaEwZYlY");
+	mysqli_select_db($link,"bwswyscfjeaxoy04miln");
 	$consultaUsuario=" SELECT * from usuarios where email='$correo' AND password='$password'";
 	$resultado= mysqli_query($link,$consultaUsuario);
 	if($row=mysqli_fetch_array($resultado)){

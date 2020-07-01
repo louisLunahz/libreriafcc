@@ -7,10 +7,10 @@ $nombreLibro=$_POST['inputnameLibro'];
 $costo=$_POST['inputPrecioLibro'];
 $descripcion=$_POST['descripcionArea'];
 
-$host="localhost";
-$user="root";
-$password="";
-$database="libreria";
+$host="bwswyscfjeaxoy04miln-mysql.services.clever-cloud.com";
+$user="u9yr87t84v3djrd7";
+$password="DKMw2Jzok7cXWaEwZYlY";
+$database="bwswyscfjeaxoy04miln";
 $link=mysqli_connect($host,$user,$password);
 mysqli_select_db($link, $database);
 $obtenerLibro="select ruta_imagen, estado_actual, Area from libros where id_libro=$id_libro";

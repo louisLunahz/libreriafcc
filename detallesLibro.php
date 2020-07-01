@@ -88,10 +88,10 @@
 	}else{ 
 		$id_libro=$_GET["id"]; 
 		//conectarse a la base de datos
-		$host="localhost";
-		$user="root";
-		$password="";
-		$database="libreria";
+		$host="bwswyscfjeaxoy04miln-mysql.services.clever-cloud.com";
+		$user="u9yr87t84v3djrd7";
+		$password="DKMw2Jzok7cXWaEwZYlY";
+		$database="bwswyscfjeaxoy04miln";
 		$consultaLibro="select * from libros where id_libro='$id_libro'";//clientes a realizar
 		$link=mysqli_connect($host,$user,$password);
 		mysqli_select_db($link, $database);

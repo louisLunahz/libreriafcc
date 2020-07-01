@@ -16,8 +16,8 @@ if(!verificarMatricula($matricula)) {
 }else if($claveCorrecta!=1){
 		echo json_encode("error_3");
 }else{
-$link=mysqli_connect("localhost","root","");
-	mysqli_select_db($link,"libreria");
+$link=mysqli_connect("bwswyscfjeaxoy04miln-mysql.services.clever-cloud.com","u9yr87t84v3djrd7","DKMw2Jzok7cXWaEwZYlY");
+	mysqli_select_db($link,"bwswyscfjeaxoy04miln");
 	$consultaEmail=" SELECT * from usuarios where email='$email'";
 	$consultaMatricula=" SELECT * from usuarios where matricula='$matricula'";
 	//echo "$consultaEmail";

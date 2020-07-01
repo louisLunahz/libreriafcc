@@ -23,10 +23,10 @@ if (trim($nombreLibro) === '' || trim($area) === '' || trim($costo)=='' || trim(
     $rutaImagen="libros/".$foto;  
    // echo "ruta de imagen= $rutaImagen";
     copy($_FILES['fotoLibro']['tmp_name'],$rutaImagen);
-    $host="localhost";
-			$user="root";
-			$password="";
-			$database="libreria";
+    $host="bwswyscfjeaxoy04miln-mysql.services.clever-cloud.com";
+			$user="u9yr87t84v3djrd7";
+			$password="DKMw2Jzok7cXWaEwZYlY";
+			$database="bwswyscfjeaxoy04miln";
         $insertaLibro="INSERT INTO `libros` (`id_libro`, `nombre`, `Area`, `Descripcion`, `costo`, `ruta_imagen`, `estado_actual`, `propietario`, `status`) VALUES (NULL, '$nombreLibro', '$area', '$descripcion', '$costo', '$rutaImagen', '$condicion', '$id_usuario', '0' );";//insertar libro en la tabla libros
         $link=mysqli_connect($host,$user,$password);
         mysqli_select_db($link, $database);

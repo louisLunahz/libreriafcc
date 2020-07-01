@@ -85,10 +85,10 @@
 			<div class="row">
 				<?php 
 	//abrir la base de datos y obtener los datos de la tabla libros
-				$host="localhost";
-				$user="root";
-				$password="";
-				$database="libreria";
+				$host="bwswyscfjeaxoy04miln-mysql.services.clever-cloud.com";
+				$user="u9yr87t84v3djrd7";
+				$password="DKMw2Jzok7cXWaEwZYlY";
+				$database="bwswyscfjeaxoy04miln";
 		$ConsultaLibros="select * from libros where status=0";
 		$link=mysqli_connect($host,$user,$password);
 		mysqli_select_db($link, $database);
