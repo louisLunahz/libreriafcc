@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/estiloEditarLibro.css">
 	<title>Inicio</title>
 </head>
@@ -21,20 +21,20 @@
 
 
 
-		<?php 
-		if (!(isset($_SESSION['id_usuario'])) ) {
-			header("location: index.php");
-		}
-		if (!isset($_GET['id']) ) { 
-			header("location: micuenta.php");
-		}
-		$id_libro=$_GET["id"]; 
-		$_SESSION['id_libro_editar']=$id_libro;
+	<?php 
+	if (!(isset($_SESSION['id_usuario'])) ) {
+		header("location: index.php");
+	}
+	if (!isset($_GET['id']) ) { 
+		header("location: micuenta.php");
+	}
+	$id_libro=$_GET["id"]; 
+	$_SESSION['id_libro_editar']=$id_libro;
 		//conectarse a la base de datos
-		$host="bwswyscfjeaxoy04miln-mysql.services.clever-cloud.com";
-		$user="u9yr87t84v3djrd7";
-		$password="DKMw2Jzok7cXWaEwZYlY";
-		$database="bwswyscfjeaxoy04miln";
+	$host="bwswyscfjeaxoy04miln-mysql.services.clever-cloud.com";
+	$user="u9yr87t84v3djrd7";
+	$password="DKMw2Jzok7cXWaEwZYlY";
+	$database="bwswyscfjeaxoy04miln";
 		$consultaLibro="select * from libros where id_libro='$id_libro'";//clientes a realizar
 		$link=mysqli_connect($host,$user,$password);
 		mysqli_select_db($link, $database);
@@ -142,9 +142,9 @@
 
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 		<script src="js/editarLibro.js"></script>
 	</body>
 	</html>

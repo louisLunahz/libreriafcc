@@ -1,4 +1,5 @@
 
+
 <nav class="navbar navbar-light navbar-expand-md " id="barraNavegacion">
 			<a class="navbar-brand" href="index.php"> 
 			<img src="img/libro.png" alt="Logo" style="width:40px;">LIBRERIA FCC
