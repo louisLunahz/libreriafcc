@@ -44,7 +44,7 @@
 				$row=mysqli_fetch_array($result);
 
 			}else{
-				header("location: micuenta.php");
+				header("location: miCuenta.php");
 				
 			}
 
