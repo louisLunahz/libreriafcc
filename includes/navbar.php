@@ -1,6 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/estiloNavBar.css">
+</head>
+<body>
 
-
-<nav class="navbar navbar-light navbar-expand-md " id="barraNavegacion">
+<nav class="navbar navbar-dark navbar-expand-md " id="barraNavegacion">
 			<a class="navbar-brand" href="index.php"> 
 			<img src="img/libro.png" alt="Logo" style="width:40px;">LIBRERIA FCC
 			</a>
@@ -9,7 +15,7 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNavDropdown">
 				<ul class="navbar-nav mx-auto">
-					<li class="nav-item active ">
+					<li class="nav-item  ">
 						<a class="nav-link" href="index.php">Inicio <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
@@ -61,3 +67,6 @@
 				</ul>
 			</div>
 		</nav>
+	
+</body>
+</html>
