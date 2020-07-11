@@ -1,7 +1,7 @@
-var form = document.getElementById("formularioVender");
+var form=document.getElementById("formularioVender");
 var mensaje = document.getElementById("mensajeError");
-
-form.addEventListener("submit", function (e) {
+if(form != null ){
+ form.addEventiLstener("submit", function (e) {
   //document.writeln("funciona el boton");
   e.preventDefault();
   var datos = new FormData(form);
@@ -41,3 +41,5 @@ form.addEventListener("submit", function (e) {
       }
     });
 });
+}
+  
