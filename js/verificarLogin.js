@@ -5,8 +5,7 @@ form.addEventListener("submit", function (e) {
   e.preventDefault();
   var datos = new FormData(form);
 
-  console.log(datos.get("mail"));
-  console.log(datos.get("pass"));
+
 
   fetch("validarUsuario.php", {
     method: "POST",
@@ -14,7 +13,7 @@ form.addEventListener("submit", function (e) {
   })
     .then((res) => res.json())
     .then((data) => {
-      console.log(data);
+      //console.log(data);
       switch (data) {
         case "error_1":
           mensaje.innerHTML =
