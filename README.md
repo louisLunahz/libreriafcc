@@ -1,6 +1,6 @@
 # libreriafcc
 Este es un proyecto que hice en conjunto con dos compañeros de mi clase para la materia de Aplicaciones web. 
-Aunque el trabajo fue en equipo, debo decir sin animo de pretenciosidad que el 80 por ciento del mismo fue realizado por mi.
+
 
 OBJETIBVO
 Este sitio es de compra y venta de libros de texto en el cual se puede iniciar sesión, registrarse, publicar un libro a vender y comprar un libro.
