@@ -22,6 +22,10 @@ La base de datos está en MySQL y alojada en CleverCloud la cual es una platafor
 El sitio está alojado en la plataforma Heroku haciendo uso de continuous Deployment 
 por medio de la integración que tiene Github con la misma.
 
+Para registrarse es necesaria una matricula la cual es un numero de 8 numeros. 
+El sistema detecta si un email ya está en uso.
+La contraseña debe ser de al menos 6 caracteres.
+
 Tecnologías usadas: PHP, HTML, MySQL, CSS, Bootstrap 4, GIT.  
 
 Vista Previa. 
